@@ -1,9 +1,22 @@
 {
-    "members": {
-        "totalMembersCount": "32",
-            "SCKim" : {
-                "name": "SC Kim",
-                "gender": "Male"
-            }
+  "members" : {
+    "2Bp23eNCUWTk8Bsiu5ar2zu5TGH3" : {
+      "player_email" : "mariarose@gmail.com",
+      "player_gender" : "female",
+      "player_name" : "Maria Rose",
+      "player_total_points" : 54
+    },
+    "MnttQboIJPSw3p8TEabnEipev7z2" : {
+      "player_email" : "johndavis@gmail.com",
+      "player_gender" : "male",
+      "player_name" : "John Davis",
+      "player_total_points" : 100
+    },
+    "eNTRO3W6kQOz2pg8A0oRKs8RbzK2" : {
+      "player_email" : "sc@sckim.com",
+      "player_gender" : "Male",
+      "player_name" : "kim",
+      "player_total_points" : 81
     }
+  }
 }
