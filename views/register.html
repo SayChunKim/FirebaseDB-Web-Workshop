@@ -1,0 +1,27 @@
+<div class="paper-card">
+    <div>
+        <h2>Register</h2>
+        <form ng-submit="submit()" name="registerForm">
+            <div class="form-group">
+                <input type="text" class="form-control" name="player_name" placeholder="Name" ng-model="player_name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="player_email" placeholder="Email" ng-model="player_email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="player_password" placeholder="Password" ng-model="player_password">
+            </div>
+            <div class="form-group">
+                <input type="radio" value="male" ng-model="player_gender" name="player_gender"> Male &nbsp;&nbsp;
+                <input type="radio" value="female" ng-model="player_gender" name="player_gender"> Female
+                <br/>
+                <p class="help-block">By Clicking Register Button, I have agreed to the User Agreement & Data Policy of Basketball App</p>
+                <hr/>
+                <div>
+                    <button type="submit" class="btn-primary btn">Register</button> &nbsp;&nbsp;
+                    <a href="#!/login" class="btn btn-secondary">Login</a></div>
+            </div>
+        </form>
+        <p class="text-danger">{{errorMessage}}</p>
+    </div>
+</div>

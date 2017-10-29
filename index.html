@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BasketBall App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <base href="/">
+    <style type="text/css">
+    .paper-card {
+        padding: 16px 24px;
+        background: #fff;
+        width: 100%;
+    }
+    
+    body {
+        background: #f2f2f2;
+    }
+    </style>
+</head>
+
+<body ng-app="Fireball">
+    <nav class="navbar navbar-default">
+        <a href="#!/" class="navbar-brand"><span>Basketball RealTime App</span></a>
+    </nav>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+</body>
+<!-- ANGULARJS DEPENDENCIES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+<script src="http://127.0.0.1:8887/js/app.js"></script>
+
+<!-- ADD CONTROLLER.JS FILES HERE -->
+<script src="http://127.0.0.1:8887/js/controllers/HomeCtrl.js"></script>
+<script src="http://127.0.0.1:8887/js/controllers/LoginCtrl.js"></script>
+<script src="http://127.0.0.1:8887/js/controllers/RegisterCtrl.js"></script>
+<script src="http://127.0.0.1:8887/js/controllers/MemberCtrl.js"></script>
+<!-- <script src="http://127.0.0.1:8887/js/controllers/DashboardCtrl.js"></script> -->
+
+<!-- ADD FIREBASE CONFIG HERE -->
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBTJp5DXXtQBJSid8geVqOM9VeEUepIj8c",
+    authDomain: "sc-firebase-workshop.firebaseapp.com",
+    databaseURL: "https://sc-firebase-workshop.firebaseio.com",
+    projectId: "sc-firebase-workshop",
+    storageBucket: "sc-firebase-workshop.appspot.com",
+    messagingSenderId: "978629580978"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>

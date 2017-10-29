@@ -1,0 +1,23 @@
+<div class="paper-card">
+    <div>
+        <h1>Login</h1>
+    </div>
+    <form name="memberForm" ng-submit="loginSubmit()">
+       <label>Email : </label>
+       <input type="text" class="form-control" name="player_email" ng-model="player_email" required> 
+       <div class="text-danger" ng-if="(submitted || memberForm.player_email.$touched) && memberForm.player_email.$error.required">
+           <p>Email is required</p>
+       </div>
+       <br>
+       <label>Password : </label>
+       <input type="password" class="form-control" name="player_password" ng-model="player_password" required> 
+       <div class="text-danger" ng-if="(submitted || memberForm.player_password.$touched) && memberForm.player_password.$error.required">
+           <p>Password is required</p>
+       </div>
+       <hr>
+       <button type="submit" class="btn btn-primary">Login</button>
+       <a href="#!/register" class="btn btn-secondary">Register As New Player</a>
+       <p class="text-danger">{{errorMessage}}</p>
+    </div>
+
+</div>

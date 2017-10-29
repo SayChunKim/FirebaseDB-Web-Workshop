@@ -1,0 +1,24 @@
+<div class="paper-card">
+    <div>
+        <h1>Welcome to Basketball app</h1>
+    </div>
+    <div class="" ng-hide="userLogged">
+        <p>Let's Play some ball ! </p>
+        <a href="#!/login" class="btn btn-primary">Login as member</a>
+        <a href="#!/register" class="btn btn-secondary">Register as new player</a>
+    </div>
+    <div>
+        <h3>Current Number of Registered : <span>{{PlayerNumber}}</span></h3>
+    </div>
+    <div ng-show="userLogged">
+        <a href="#!/member/{{param_id}}" class="btn btn-primary">Go Dashboard</a>
+        <a href="javascript:void(0)" ng-click="userLogout()" class="btn btn-danger">Logout</a>
+    </div>
+    <div>
+        <hr>
+        <h3>Other Players's Score</h3>
+        <ul>
+            <li ng-repeat="student in students"><p>{{student.player_name}} : <b>{{student.player_total_points}}</b></p></li>
+        </ul>
+    </div>
+</div>
